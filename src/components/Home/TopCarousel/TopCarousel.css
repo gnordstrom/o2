@@ -1,0 +1,17 @@
+.carousel-img {
+  background: url('./assets/carousel1.jpg') bottom no-repeat; 
+  background-size: cover;
+  height: 100%;
+}
+
+
+@media only screen and (max-width: 767px) {
+  .carousel-img {
+    height: 350px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .carousel-img {
+    height: 320px;
+  }
+}

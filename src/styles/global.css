@@ -1,0 +1,31 @@
+/* 
+Custom CSS 
+*/
+
+.text-red {
+  color: #C6202D;
+}
+.text-white {
+  color: #ffffff;
+}
+.text-black {
+  color: #212121;
+}
+.text-gray {
+  color: #757575;
+}
+
+.bg-gray {
+  background: #F9FAFB;
+}
+.bg-white {
+  background: #ffffff;
+}
+
+.divider-color { 
+  border-color: #BDBDBD; 
+}
+
+/* 
+Global CSS 
+*/
