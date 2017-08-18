@@ -37,6 +37,10 @@
   margin-left: 20px;
 }
 
+.c {
+  min-width: 150px;
+}
+
 .c img {
   width: 21px;
   height: 21px;
