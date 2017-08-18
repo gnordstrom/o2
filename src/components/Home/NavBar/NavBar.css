@@ -12,10 +12,11 @@
 
 .box {
   height: 100%;
-  /* border: 1px solid black; */
   display: flex;
   justify-content: center;
+  /* flex-direction: column; */
   align-items: center;
+  font-size: 11px;
 }
 
 .box input {
@@ -39,21 +40,152 @@
 .c img {
   width: 21px;
   height: 21px;
+}
+
+.c .red-box {
+  z-index: 30;
+  position: relative;
+  left: -47px;
+  height: 39px;
+  width: 60px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: #c7202c;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  
+}
+
+.red-box:hover {
+  background-color: #DF0E1D;
+}
+
+.c .no-box {
+  width: 60px;
   position: relative;
   left: -35px;
+
 }
+
+
 
 .d {
   margin-right: 40px;
 }
-
-
-@media only screen and (max-width: 767px) {
-  
+.d .hidden {
+  display: none;
 }
-@media only screen and (max-width: 500px) {
-  .box input {
-    border-right: 2px solid #ced1d5;
-    width: 100%;
+
+
+.e, .f, .g, .h, .i {
+  display: none;
+}
+
+
+@media only screen and (min-width: 500px) and (max-width: 720px) {
+  .c .red-box {
+    display: flex;
+  }
+  
+  .c .no-box {
+    display: none;
   }
 }
+
+
+@media only screen and (min-width: 721px) and (max-width: 960px) {
+  .nav-grid {
+    display: grid;
+    grid-template-columns: 45px 45px 150px 2fr 45px 45px 45px 45px;
+    grid-gap: 20px;
+    height: 100%;
+  }
+  .d, .e, .f, .g, .h {
+    display: flex;
+  }
+
+  .d, .f, .g, .h {
+    flex-direction: column;
+  }
+  
+  .d .hidden {
+    display: block;
+  }
+  
+  .c .red-box {
+    display: flex;
+    left: -10px;
+  }
+  
+  .c .no-box {
+    display: none;
+  }
+  
+}
+
+
+@media only screen and (max-width: 360px) {
+  .c .no-box {
+    width: 40px;
+    left: -25px;
+  }
+}
+
+
+@media only screen and (min-width: 961px) {
+  .nav-grid {
+    display: grid;
+    grid-template-columns: 45px 150px 1fr 86px 45px 45px 45px 45px;
+    grid-gap: 20px;
+    height: 100%;
+  }
+  .a {
+    display: none;
+  }
+  .d, .e, .f, .g, .h {
+    display: flex;
+  }
+  
+  .d, .f, .g, .h {
+    flex-direction: column;
+  }
+
+  .i {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .i-top {
+    margin-bottom: 5px;
+    font-weight: bold;
+    line-height: 13px;
+  }
+
+  .i-bottom {
+    font-weight: bold;
+    color: #248a9c;
+    text-align: left;
+  }
+
+  .c .red-box {
+    display: flex;
+    left: -10px;
+  }
+  
+  .c .no-box {
+    display: none;
+  }
+  
+}
+
+/*
+Overstock Media Queries (Breakpoints)
+
+min-width: 500px - switches red search in top nav
+min-width: 721px - switches top nav
+min-width: 768px - top carousel goes to 2 images
+min-width: 961px - switches top nav
+*/
